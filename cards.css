@@ -1,0 +1,38 @@
+body {
+    background: darkorchid;
+    color: black;
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1 {
+    font-family: 'Raleway', sans-serif;
+}
+
+h2 {
+    font-family: 'Nanum Brush Script', cursive;
+}
+
+#contentContainer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+article {
+    background: white;
+    width: 28%;
+    margin: 25px auto;
+    padding: 15px;
+    border-radius: 3px;
+}
+
+button.deleteButton {
+    border-radius: 3px;
+    border: none;
+    background: darkslategrey;
+    color: white;
+    padding: 5px;
+    float: right;
+}
