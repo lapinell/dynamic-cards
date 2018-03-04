@@ -3,19 +3,61 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
+    <title>A Masonry Tumblr-esque Blog</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Brush+Script|Raleway|Source+Sans+Pro" rel="stylesheet">
     <link rel="stylesheet" type="text/css" media="screen" href="cards.css" />
 </head>
 <body>
     <header>
-        <h1>Tumblr-esque Blog</h1>
+        <h1>A Masonry Tumblr-esque Blog</h1>
+        <p>By Laura Pinell, Apprentic Frontend Developer and Designer at NSS</p>
         <h2>Enter text here:</h2>
         <textarea type="text" id="contentInput"></textarea>
         <button id="createContent">Create</button>
     </header>
-    <main id="contentContainer">
+    <main id="contentContainer" class="grid">
+        <article class="grid-item" id="test-1">
+            <p>Lorem ipsum dolor sit amet, per ea quodsi ullamcorper interpretaris, maiorum aliquando disputando te pro. Dicant offendit convenire nec in, pri quod dicit consequuntur te, no tempor fabulas urbanitas eam. Et tollit libris quidam mea. Vim ex utamur volumus delicata.</p>
+            <button class="deleteButton" id="test-D1">Delete</button>
+        </article>
+        <article class="grid-item" id="test-1">
+            <p>Lorem ipsum dolor sit amet, per ea quodsi ullamcorper interpretaris, maiorum aliquando disputando te pro. Dicant offendit convenire nec in, pri quod dicit consequuntur te, no tempor fabulas urbanitas eam. Et tollit libris quidam mea. Vim ex utamur volumus delicata.</p>
+            <p>Lorem ipsum dolor sit amet, per ea quodsi ullamcorper interpretaris, maiorum aliquando disputando te pro. Dicant offendit convenire nec in, pri quod dicit consequuntur te, no tempor fabulas urbanitas eam. Et tollit libris quidam mea. Vim ex utamur volumus delicata.</p>
+            <button class="deleteButton" id="test-D1">Delete</button>
+        </article>
+        <article class="grid-item" id="test-1">
+            <p>Lorem ipsum dolor sit amet, per ea quodsi ullamcorper interpretaris, maiorum aliquando disputando te pro. Dicant offendit convenire nec in, pri quod dicit consequuntur te, no tempor fabulas urbanitas eam. Et tollit libris quidam mea. Vim ex utamur volumus delicata.</p>
+            <p>Lorem ipsum dolor sit amet, per ea quodsi ullamcorper interpretaris, maiorum aliquando disputando te pro. Dicant offendit convenire nec in, pri quod dicit consequuntur te, no tempor fabulas urbanitas eam. Et tollit libris quidam mea. Vim ex utamur volumus delicata.</p>
+            <p>Lorem ipsum dolor sit amet, per ea quodsi ullamcorper interpretaris, maiorum aliquando disputando te pro. Dicant offendit convenire nec in, pri quod dicit consequuntur te, no tempor fabulas urbanitas eam. Et tollit libris quidam mea. Vim ex utamur volumus delicata.</p>
+            <button class="deleteButton" id="test-D1">Delete</button>
+        </article>
+        <article class="grid-item" id="test-1">
+            <p>Lorem ipsum dolor sit amet, per ea quodsi ullamcorper interpretaris, maiorum aliquando disputando te pro. Dicant offendit convenire nec in, pri quod dicit consequuntur te, no tempor fabulas urbanitas eam. Et tollit libris quidam mea. Vim ex utamur volumus delicata.</p>
+            <p>Lorem ipsum dolor sit amet, per ea quodsi ullamcorper interpretaris, maiorum aliquando disputando te pro. Dicant offendit convenire nec in, pri quod dicit consequuntur te, no tempor fabulas urbanitas eam. Et tollit libris quidam mea. Vim ex utamur volumus delicata.</p>
+            <button class="deleteButton" id="test-D1">Delete</button>
+        </article>
+        <article class="grid-item" id="test-1">
+            <p>Lorem ipsum dolor sit amet, per ea quodsi ullamcorper interpretaris, maiorum aliquando disputando te pro. Dicant offendit convenire nec in, pri quod dicit consequuntur te, no tempor fabulas urbanitas eam. Et tollit libris quidam mea. Vim ex utamur volumus delicata.</p>
+            <button class="deleteButton" id="test-D1">Delete</button>
+        </article>
+        <article class="grid-item" id="test-1">
+            <p>Lorem ipsum dolor sit amet, per ea quodsi ullamcorper interpretaris, maiorum aliquando disputando te pro. Dicant offendit convenire nec in, pri quod dicit consequuntur te, no tempor fabulas urbanitas eam. Et tollit libris quidam mea. Vim ex utamur volumus delicata.</p>
+            <p>Lorem ipsum dolor sit amet, per ea quodsi ullamcorper interpretaris, maiorum aliquando disputando te pro. Dicant offendit convenire nec in, pri quod dicit consequuntur te, no tempor fabulas urbanitas eam. Et tollit libris quidam mea. Vim ex utamur volumus delicata.</p>
+            <p>Lorem ipsum dolor sit amet, per ea quodsi ullamcorper interpretaris, maiorum aliquando disputando te pro. Dicant offendit convenire nec in, pri quod dicit consequuntur te, no tempor fabulas urbanitas eam. Et tollit libris quidam mea. Vim ex utamur volumus delicata.</p>
+            <p>Lorem ipsum dolor sit amet, per ea quodsi ullamcorper interpretaris, maiorum aliquando disputando te pro. Dicant offendit convenire nec in, pri quod dicit consequuntur te, no tempor fabulas urbanitas eam. Et tollit libris quidam mea. Vim ex utamur volumus delicata.</p>
+            <button class="deleteButton" id="test-D1">Delete</button>
+        </article>
+        <article class="grid-item" id="test-1">
+            <p>Lorem ipsum dolor sit amet, per ea quodsi ullamcorper interpretaris, maiorum aliquando disputando te pro. Dicant offendit convenire nec in, pri quod dicit consequuntur te, no tempor fabulas urbanitas eam. Et tollit libris quidam mea. Vim ex utamur volumus delicata.</p>
+            <button class="deleteButton" id="test-D1">Delete</button>
+        </article>
     </main>
-    <script src="cards.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+  crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
+<script src="cards.js"></script>
 </body>
 </html>
