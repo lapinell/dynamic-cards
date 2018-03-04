@@ -1,5 +1,18 @@
 "use strict";
 
+var elem = document.querySelector('.grid');
+var msnry = new Masonry( elem, {
+  // options
+  itemSelector: '.grid-item',
+  columnWidth: 200
+});
+
+// element argument can be a selector string
+//   for an individual element
+var msnry = new Masonry( '.grid', {
+  // options
+});
+
 // Create New Card Content, Generate IDs //
 
 function card (content, cardID, deleteButton) {
@@ -53,7 +66,7 @@ let createCard = (userContent, cID, dID) => {
     // storeCards.push(newCard);
    
     let cardContent = '';
-    cardContent += `<article id="${newCard.cardID}">`;
+    cardContent += `<article class="grid-item" id="${newCard.cardID}">`;
     cardContent += `<p>${newCard.content}</p>`;
     cardContent += `<button class="deleteButton" id="${newCard.deleteButton}">Delete</button>`;
     cardContent += `</article>`;
